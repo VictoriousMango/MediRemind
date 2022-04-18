@@ -117,8 +117,9 @@ class _HomeState extends State<Home> {
                   padding: EdgeInsets.symmetric(horizontal: 5.0),
                   child: Calendar(chooseDay, _daysList),
                 ),
+                
                 MedicinesList(
-                    dailyPills, setData, flutterLocalNotificationsPlugin)
+                  dailyPills, setData, flutterLocalNotificationsPlugin)
               ],
             ),
           ),

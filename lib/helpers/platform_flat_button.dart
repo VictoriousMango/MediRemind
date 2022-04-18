@@ -8,7 +8,10 @@ class PlatformFlatButton extends StatelessWidget {
   final Widget buttonChild;
   final Color color;
 
-  PlatformFlatButton({@required this.buttonChild,@required this.color,@required this.handler});
+  PlatformFlatButton(
+      {@required this.buttonChild,
+      @required this.color,
+      @required this.handler});
 
   @override
   Widget build(BuildContext context) {
@@ -17,14 +20,12 @@ class PlatformFlatButton extends StatelessWidget {
             child: this.buttonChild,
             color: this.color,
             onPressed: this.handler,
-            borderRadius: BorderRadius.circular(15.0),
+            
           )
         : FlatButton(
             color: this.color,
             child: this.buttonChild,
             onPressed: this.handler,
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(15.0)),
           );
   }
 }
